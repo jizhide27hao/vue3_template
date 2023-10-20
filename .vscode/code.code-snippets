@@ -1,0 +1,67 @@
+{
+  "create vue template of view": {
+    "prefix": "vtv",
+    "scope": "vue",
+    "body": [
+      "<script setup lang=\"ts\" name=\"$TM_FILENAME_BASE \">",
+      "import { ref, reactive } from \"vue\";",
+      "",
+      "/* data */",
+      "",
+      "/* computed */",
+      "",
+      "/* methods */",
+      "",
+      "/* watch */",
+      "",
+      "</script>",
+      "",
+      "<template>",
+      "  <div></div>",
+      "</template>",
+      "",
+      "<style scoped></style>"
+    ],
+    "description": "create vue template of view"
+  },
+
+  "create vue template of component": {
+    "prefix": "vtc",
+    "scope": "vue",
+    "body": [
+      "<script setup lang=\"ts\" name=\"$TM_FILENAME_BASE \">",
+      "import { ref, reactive } from \"vue\";",
+      "/* interface */",
+      "interface Props {",
+      "}",
+      "",
+      "interface Emit {",
+      "}",
+      "",
+      "/* props */",
+      "const props = withDefaults(defineProps<Props>(), {})",
+      "",
+      "/* data */",
+      "",
+      "/* computed */",
+      "",
+      "/* emit */",
+      "const emit = defineEmits<Emit>()",
+      "",
+      "/* methods */",
+      "",
+      "/* watch */",
+      "",
+      "/* expose */",
+      "defineExpose({})",
+      "</script>",
+      "",
+      "<template>",
+      "  <div></div>",
+      "</template>",
+      "",
+      "<style scoped></style>"
+    ],
+    "description": "create vue template of component"
+  }
+}

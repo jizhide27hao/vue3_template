@@ -8,6 +8,9 @@
     }
   ],
   "compilerOptions": {
-    "noImplicitAny": false
+    "noImplicitAny": false,
+    "paths": {
+      "@/*": ["./src/*"]
+    }
   }
 }
