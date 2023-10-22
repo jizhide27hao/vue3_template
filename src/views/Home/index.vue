@@ -6,6 +6,7 @@ const msg = ref('hello home');
 
 <template>
   <div class="home">
+    <div class="mb-5 h-full w-full t-color">hgel</div>
     {{ msg }}
     <cropper-img></cropper-img>
     <TestButton />
