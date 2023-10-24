@@ -5,7 +5,6 @@ const components = import.meta.glob<Component>('./**/index.vue', {
   import: 'default'
 });
 
-console.log('cccc', components);
 const createComponents = () => ({
   install(app: App) {
     console.log('aaaa', app);

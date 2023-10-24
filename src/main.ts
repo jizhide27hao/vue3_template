@@ -1,5 +1,7 @@
 import './assets/main.css';
 import 'virtual:uno.css';
+import 'virtual:svg-icons-register';
+import '@/utils/day';
 
 import { createApp } from 'vue';
 import { createPinia } from 'pinia';

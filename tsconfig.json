@@ -9,6 +9,7 @@
   ],
   "compilerOptions": {
     "noImplicitAny": false,
+    "esModuleInterop": true,
     "paths": {
       "@/*": ["./src/*"]
     }
