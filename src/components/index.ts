@@ -7,7 +7,6 @@ const components = import.meta.glob<Component>('./**/index.vue', {
 
 const createComponents = () => ({
   install(app: App) {
-    console.log('aaaa', app);
     // 注册自定义组件
     Object.values(components).forEach(component => {
       if (!component.name) return;
