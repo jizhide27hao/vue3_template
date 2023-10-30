@@ -3,7 +3,7 @@
     "prefix": "vtv",
     "scope": "vue",
     "body": [
-      "<script setup lang=\"ts\" name=\"$TM_FILENAME_BASE \">",
+      "<script setup lang=\"ts\">",
       "import { ref, reactive } from \"vue\";",
       "",
       "/* data */",
@@ -13,6 +13,7 @@
       "/* methods */",
       "",
       "/* watch */",
+      "defineOptions({name: '$TM_FILENAME_BASE'});",
       "",
       "</script>",
       "",
@@ -29,7 +30,7 @@
     "prefix": "vtc",
     "scope": "vue",
     "body": [
-      "<script setup lang=\"ts\" name=\"$TM_FILENAME_BASE \">",
+      "<script setup lang=\"ts\">",
       "import { ref, reactive } from \"vue\";",
       "/* interface */",
       "interface Props {",
@@ -54,6 +55,7 @@
       "",
       "/* expose */",
       "defineExpose({})",
+      "defineOptions({name: '$TM_FILENAME_BASE'});",
       "</script>",
       "",
       "<template>",
