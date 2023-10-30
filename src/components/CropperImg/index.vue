@@ -4,7 +4,6 @@ import { VueCropper } from 'vue-cropper';
 import { message } from 'ant-design-vue';
 import 'vue-cropper/dist/index.css';
 import useUserStore from '@/stores/user';
-import { patchUserHeadApi } from '@/apis/methods/user';
 
 interface PreviewType {
   w: number;
@@ -121,17 +120,14 @@ const handleClose = () => {
 const handleOk = () => {
   cropperRef.value.getCropData((data: string) => {
     uploading.value = true;
-    patchUserHeadApi(data)
-      .send()
-      .then(() => {
-        headPicture.value = data;
-        updateUserHeadImg(data);
-        message.success('头像更换成功');
-        handleClose();
-      })
-      .finally(() => {
-        uploading.value = false;
-      });
+    setTimeout(() => {
+      console.log('上传头像');
+      headPicture.value = data;
+      updateUserHeadImg(data);
+      message.success('头像更换成功');
+      handleClose();
+      uploading.value = false;
+    }, 1000);
   });
 };
 
